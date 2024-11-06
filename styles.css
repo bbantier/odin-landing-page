@@ -9,6 +9,7 @@
 body {
     font-family: "Roboto", "Arial", sans-serif;
     display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -71,7 +72,7 @@ body {
 }
 
 .intro-image {
-    height: 100%;
+    height: auto;
     width: 700px;
     background-color: #606060;
     color: #E7E5EB;
@@ -80,4 +81,59 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.info-title {
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 35px;
+}
+
+.card-wrapper {
+    width: 130px;
+}
+
+.card {
+    height: 130px;
+    width: 130px;
+    border: 3px solid #3882F6;
+    border-radius: 15px;
+}
+
+.card-text {
+    color: #606060;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 100px 25vw;
+}
+
+.quote-text {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quote-author {
+    text-align: right;
+    font-size: 1.1em;
+}
+
+.quote-author::before {
+    content: "-";
 }
